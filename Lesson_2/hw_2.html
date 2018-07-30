@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
 </body>
 <script>
     alert('Сейчас мы соберем про Вас информацию =)');
@@ -15,11 +14,9 @@
     const secondName = prompt('Ваша фамилия?');
     const years = prompt('Сколько Вам годков?');
     const gender = confirm('Вы мужчина?');
-    if (gender) {
-        var genderType = 'Мужчина';
-    } else {
-        var genderType = 'Женщина';
-    }
+    const genderMale = 'Мужчина';
+    const genderFemale = 'Женщина';
+    const genderType = gender ? genderMale : genderFemale;
     alert('Подытожим\n\rИмя: ' + name + '\n\rФамилия: ' + secondName + '\n\rЛет: ' + years + '\n\rПол: ' + genderType);
 </script>
 </html>
